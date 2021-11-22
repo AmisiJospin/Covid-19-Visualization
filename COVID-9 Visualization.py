@@ -67,7 +67,6 @@ plt.show()
 
 # Worst Hit Countries by COVID-19
 
-
 from datetime import date, timedelta
 
 yesterday = date.today() - timedelta(days=1)
@@ -83,6 +82,8 @@ ax = fig.add_subplot(111)
 
 ax.pie(top_10['Confirmed'], labels=top_10['Country'], autopct = '%1.1f%%')
 ax.title.set_text('Hardest Hit Countries Worldwide')
+
+# This code shows the legend of the graph and plot everything
 
 plt.legend(loc='upper left')
 plt.show()
